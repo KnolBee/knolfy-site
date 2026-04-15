@@ -1,76 +1,197 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+  <meta charset="UTF-8">
   <title>Knolfy</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
+
   <style>
-    body { font-family: Arial; max-width: 800px; margin: auto; padding: 20px; line-height: 1.6; }
-    h1 { font-size: 36px; }
-    .btn { display: inline-block; padding: 10px 15px; margin: 10px 5px 10px 0; background: black; color: white; text-decoration: none; border-radius: 5px; }
-    .section { margin-top: 40px; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial;
+      margin: 0;
+      background: #0f172a;
+      color: #e2e8f0;
+    }
+
+    .container {
+      max-width: 900px;
+      margin: auto;
+      padding: 40px 20px;
+    }
+
+    h1 {
+      font-size: 42px;
+      margin-bottom: 10px;
+      text-align: center;
+    }
+
+    h2 {
+      margin-top: 50px;
+      font-size: 24px;
+      color: #f8fafc;
+    }
+
+    p {
+      color: #94a3b8;
+    }
+
+    .center {
+      text-align: center;
+    }
+
+    .btn {
+      display: inline-block;
+      padding: 12px 18px;
+      margin: 10px 5px;
+      background: #7c3aed;
+      color: white;
+      text-decoration: none;
+      border-radius: 8px;
+      font-weight: 500;
+    }
+
+    .btn.secondary {
+      background: #1e293b;
+    }
+
+    ul {
+      padding-left: 20px;
+      color: #cbd5f5;
+    }
+
+    .card {
+      background: #1e293b;
+      padding: 20px;
+      border-radius: 12px;
+      margin-top: 20px;
+    }
+
+    .card img {
+      width: 100%;
+      border-radius: 10px;
+      box-shadow: 0 20px 40px rgba(0,0,0,0.5);
+    }
+
+    .tag {
+      display: inline-block;
+      background: #4c1d95;
+      padding: 6px 12px;
+      border-radius: 20px;
+      font-size: 12px;
+      margin-bottom: 15px;
+    }
+
+    .footer {
+      margin-top: 60px;
+      font-size: 14px;
+      color: #64748b;
+      text-align: center;
+    }
   </style>
 </head>
+
 <body>
 
-<h1>Knolfy</h1>
-<p><b>Export, search, and own your AI conversations.</b></p>
+<div class="container">
 
-<a class="btn" href="https://github.com/KnolBee/knolfy-app/releases/download/v1.0.0/Knolfy.Setup.1.0.0.x64.exe">
-⬇ Download Free (Windows)
-</a>
+  <!-- Logo -->
+  <div class="center">
+    <img src="icon.png" alt="Knolfy Logo" style="width:120px; border-radius:20px; box-shadow:0 10px 30px rgba(0,0,0,0.4);">
+  </div>
 
-<a class="btn" href="https://github.com/KnolBee/knolfy-app">
-View on GitHub
-</a>
+  <div class="center">
+    <div class="tag">Local-first AI tool</div>
+  </div>
 
-<p style="margin-top:10px;">
-Windows installer • Local-first • Your data stays on your device
-</p>
+  <!-- Hero -->
+  <h1>Knolfy</h1>
 
-<p><small>
-Version 1.0.0 • x64 • If Windows shows a warning, click "More info" → "Run anyway"
-</small></p>
+  <p class="center">
+    <b>AI Knowledge Assistant</b><br>
+    Your personal memory layer across ChatGPT, Claude and more.
+  </p>
 
-<div class="section">
-<h2>The Problem</h2>
-<ul>
-  <li>AI chats are hard to export</li>
-  <li>No cross-platform search</li>
-  <li>Your data is locked</li>
-</ul>
+  <!-- Buttons -->
+  <div class="center">
+    <a class="btn" href="https://github.com/KnolBee/knolfy-app/releases/download/v1.0.0/Knolfy.Setup.1.0.0.x64.exe">
+      ⬇ Download Free (Windows)
+    </a>
+
+    <a class="btn secondary" href="https://github.com/KnolBee/knolfy-app">
+      View on GitHub
+    </a>
+  </div>
+
+  <p class="center">
+    Local-first • Private • No cloud required
+  </p>
+
+  <p class="center"><small>
+    Version 1.0.0 • Windows x64 • If Windows shows a warning, click "More info" → "Run anyway"
+  </small></p>
+
+  <!-- Problem -->
+  <h2>The Problem</h2>
+  <div class="card">
+    <ul>
+      <li>AI chats are hard to export</li>
+      <li>No unified search across platforms</li>
+      <li>Your knowledge is locked in silos</li>
+    </ul>
+  </div>
+
+  <!-- Solution -->
+  <h2>The Solution</h2>
+  <div class="card">
+    <ul>
+      <li>Export chats instantly</li>
+      <li>Search across platforms</li>
+      <li>Fully local and private</li>
+    </ul>
+  </div>
+
+  <!-- Screenshots -->
+  <h2>See Knolfy in action</h2>
+
+  <div class="card center">
+    <img src="images/controlcenter.png">
+    <p>Manage and sync your AI conversations across platforms</p>
+  </div>
+
+  <div class="card center">
+    <img src="images/chatdetail.png">
+    <p>Browse and search your AI conversations in one place</p>
+  </div>
+
+  <!-- Free -->
+  <h2>Free Version</h2>
+  <div class="card">
+    <ul>
+      <li>Single platform support</li>
+      <li>Up to 100 chats</li>
+      <li>Local storage</li>
+    </ul>
+  </div>
+
+  <!-- Pro -->
+  <h2>Pro (Coming Soon)</h2>
+  <div class="card">
+    <ul>
+      <li>Unlimited chats</li>
+      <li>Multi-platform support</li>
+      <li>Advanced search & indexing</li>
+      <li>Offline archive</li>
+    </ul>
+    <p><b>Launching soon 🚀</b></p>
+  </div>
+
+  <!-- Footer -->
+  <div class="footer">
+    Built for people who want to own their AI data.<br>
+    © 2026 Knolfy
+  </div>
+
 </div>
-
-<div class="section">
-<h2>The Solution</h2>
-<ul>
-  <li>Export instantly</li>
-  <li>Search across platforms</li>
-  <li>100% local and private</li>
-</ul>
-</div>
-
-<div class="section">
-<h2>Free Version</h2>
-<ul>
-  <li>1 platform</li>
-  <li>100 chats</li>
-</ul>
-<a class="btn" href="#">Download Now</a>
-</div>
-
-<div class="section">
-<h2>Pro (Coming Soon)</h2>
-<ul>
-  <li>Unlimited chats</li>
-  <li>Advanced search</li>
-  <li>Sync across devices</li>
-</ul>
-<p><b>Launching soon 🚀</b></p>
-</div>
-
-<hr>
-
-<p>Built for people who want to own their AI data.</p>
 
 </body>
 </html>
